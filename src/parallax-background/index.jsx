@@ -32,7 +32,7 @@ export default class ParallaxBackground extends Component {
   }
 
   componenetWillUnmount() {
-    window.removeEventListener('scroll', this.calcTranslation);
+    window.removeEventListener('scroll', this.calcTranslation.bind(this));
   }
 
   calcTranslation() {
