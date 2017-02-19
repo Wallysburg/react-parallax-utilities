@@ -9,7 +9,8 @@ export default class ParallaxContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {};
-
+  
+    this.parallaxLayers = this.props.parallaxLayers;
     this.handleMouseMove = this.handleMouseMove.bind(this);
   }
 
@@ -19,7 +20,13 @@ export default class ParallaxContainer extends Component {
     const x = event.clientX - this.parallaxBox.offSetLeft;
     const y = event.clientY - this.parallaxBox.offSetTop;
 
-    
+  }
+
+  getChildParallaxLayers() {
+    return React.Children.toArray(this.props.children)
+  }
+
+  mouseParallax(element, mouseX, mouseY, speed) {
 
   }
 
@@ -27,7 +34,6 @@ export default class ParallaxContainer extends Component {
 
     return (
       <div ref={ref => { this.parallaxBox = ref; }} onMouseMove={this.handleMouseMove}>
-        { this.props.children }
       </div>
     );
   }
