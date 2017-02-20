@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class ParallaxContainer extends Component {
+export default class ParallaxMouseMoveLayer extends Component {
 
   static propTypes = {
     children: PropTypes.node,

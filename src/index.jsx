@@ -1,11 +1,13 @@
-import ParallaxBackground from './parallax-background';
+import ParallaxMultiDirectionalLayer from './parallax-multiDirectional-layer';
 import ParallaxContainer from './parallax-container';
-import ParallaxGroup from './parallax-group';
-import ParallaxLayer from './parallax-layer';
+import ParallaxScrollGroup from './parallax-scroll-group';
+import ParallaxScrollLayer from './parallax-scroll-layer';
+import ParallaxMouseMoveLayer from './parallax-mouseMove-layer';
 
 export {
-  ParallaxBackground,
+  ParallaxMultiDirectionalLayer,
   ParallaxContainer,
-  ParallaxGroup,
-  ParallaxLayer,
+  ParallaxScrollGroup,
+  ParallaxScrollLayer,
+  ParallaxMouseMoveLayer
 };

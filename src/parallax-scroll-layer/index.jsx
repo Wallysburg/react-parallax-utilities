@@ -4,7 +4,7 @@ function calcScale(perspective, transform) {
   return ((1 + (transform * -1)) / perspective);
 }
 
-export default class ParallaxLayer extends Component {
+export default class ParallaxScrollLayer extends Component {
 
 
   static propTypes = {
